@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+		table, tb, td {
+			font-family: Cambria Math;
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align: center;
+			vertical-align: middle;
+			table-layout: fixed;
+		}
+		td {
+			font-size: 12px;
+			height: 20px;
+			width: 100px;
+		}
+		h1 {
+			width: 640px;
+			font-family: Cambria Math;
+			color: #000000;
+			font-size: 36px;
+			margin-bottom: 0.2em;
+		}
+		h2 {
+			width: 640px;
+			font-family: Cambria Math;
+			color: #000000;
+			font-size: 18px;
+			margin-top: 0em;
+		}
+		p, span, label {
+			font-family: Cambria Math;
+			font-size: 14px;
+		}
+		label, span {
+			width: 120px
+		}
+		input {
+			width: 80px;
+			margin-top: 0.2em;
+		}
+		button {
+			font-family: Cambria Math;
+			font-size: 12px;
+			height: 30px;
+			width: 100px;
+		}
+	</style>
+	<title>Coin Toss Simulator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body style="text-align:center; padding: 0px 40px" id="body">
+	<div align="left" style="width:640px">
+		<h1>Coin Toss Simulator</h1>
+		
+		<p>Warning: Refreshing the page will cause P(Head) to be reset!</p>
+		<p>Click the buttons below to toss the coin.</p>
+		<button id='t1' onclick="toss1()">Toss 1 time</button>
+		<button id='t10' onclick="toss10()">Toss 10 times</button>
+		<button id='t100' onclick="toss100()">Toss 100 times</button>
+		
+		<p></p>
+		<button onclick="reveal()">Reveal</button>
+		<span style="padding: 10px 20px">True P(Head) = </span><span id='true_p_head'>?</span>
+		<p>Once you reveal the probability, you will not be able to toss it again.</p>
+		
+		<p></p>
+		<div align="left" class="main" id="main">
+			<table id="table1"></table>
+			<p></p>
+			<table id="table2"></table>
+		</div>
+		<script type="text/javascript" src="lib.js"></script>
+	</div>
+  </body>
+</html>
