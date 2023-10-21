@@ -54,16 +54,19 @@
 	<div align="left" style="width:640px">
 		<h1>Coin Toss Simulator</h1>
 		
-		<p>Warning: Refreshing the page will cause P(Head) to be reset!</p>
+		<span style="color: red"><b>Warning: </b></span><span>Refreshing the page will cause P(Head) to be reset!</span>
+		<p></p>
+		<span><b>Instruction: </b></span><span>Follow the instruction in each section in the Google form.</span>
+		
 		<p>Click the buttons below to toss the coin.</p>
 		<button id='t1' onclick="toss1()">Toss 1 time</button>
 		<button id='t10' onclick="toss10()">Toss 10 times</button>
 		<button id='t100' onclick="toss100()">Toss 100 times</button>
 		
 		<p></p>
+		<p>Once you reveal the probability, you will not be able to toss it again.</p>
 		<button onclick="reveal()">Reveal</button>
 		<span style="padding: 10px 20px">True P(Head) = </span><span id='true_p_head'>?</span>
-		<p>Once you reveal the probability, you will not be able to toss it again.</p>
 		
 		<p></p>
 		<div align="left" class="main" id="main">
